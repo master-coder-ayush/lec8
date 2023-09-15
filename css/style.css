@@ -1,0 +1,423 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    width: 90%;
+    margin: 0;
+    /* color: rgb(56, 56, 56); */
+    border: 1px solid rgb(238, 238, 238);
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+}
+
+nav .container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+nav .links ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .links ul li{
+    margin-left: 25px;
+}
+
+nav .links ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+    
+}
+
+nav .links ul li a:hover{
+    color: rgb(53, 53, 53);
+}
+
+nav .links ul li:first-child{
+    margin-left: 0;
+}
+
+nav .buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+nav button{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px rgb(201, 201, 201) solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+nav .buttons .sign-in{
+    background-color: white;
+}
+
+nav .buttons .sign-in:hover{
+    color: rgb(0, 208, 208);
+}
+
+nav .buttons .subscribe{
+    border:  1px solid rgb(0, 208, 208);
+    background-color: rgb(0, 208, 208);
+    color: white;
+}
+
+nav .buttons .subscribe:hover{
+    background-color: rgb(0, 152, 152);
+}
+
+nav .buttons .icon{
+    color: rgb(201, 201, 201);
+    /* margin-left: 10px; */
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .buttons .icon:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+header{
+    margin-bottom: 0;
+}
+
+header section{
+    margin: 0;
+    background-image: url("https://img.freepik.com/free-photo/landscape-shot-beautiful-cholatse-mountains-body-water-khumbu-nepal_181624-24825.jpg?w=826&t=st=1694770528~exp=1694771128~hmac=ca681f38c281f73798357d59d88b0f9e590415b26d152e8caaa14b213174a028");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-section{
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+header .header-section h2{
+    margin: 0;
+    font-size: 32px;
+}
+
+header .header-section p{
+    font-size: 16px;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    width: 85%;
+    /* margin-top: 80px; */
+}
+
+main .container .card{
+    margin-top: 40px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+main .container .card .img{
+    transition: 0.3s;
+    height: 250px;
+}
+
+main .container .card .img:hover{
+    opacity: 0.9;
+}
+
+main .container .card img{
+    height: 100%;
+    object-fit: cover;
+}
+
+main .container .card .content{
+    text-align: center;
+}
+
+main .container .card p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(116, 116, 116);
+    font-weight: 200;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+main .container .card p:hover{
+    color: rgb(0, 208, 208);
+}
+
+main .container .card .content h4,main .container .card .content a{
+    transition: 0.3s;
+    color: black;
+}
+
+main .container .card .content h4:hover,main .container .card .content a:hover{
+    color: rgb(0, 208, 208);
+}
+
+main .container .card .card-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+main .container .card .author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .card .card-footer .author p{
+    margin-left: 10px;
+}
+
+
+main .container .card .card-footer p{
+    color: rgb(116, 116, 116);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+main .container .card .card-footer .author .author-name:hover{
+    color: rgb(0, 208, 208);
+}
+
+main .container .card .card-footer img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+main section{
+    margin-top: 25px;
+}
+
+main section .pages{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+main section .pages p{
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+main section .pages button{
+    border: 1px solid rgb(235, 235, 235);
+    color: black;
+    font-size: 12px;
+    background-color: white;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+main section .pages button:hover{
+    border: 1px rgb(0, 208, 208) solid;
+    background-color: rgb(0, 208, 208);
+    color: white;
+}
+
+main .seperator{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+footer{
+    margin-bottom: 30px;
+}
+
+footer .container{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+footer .container .heading{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+footer .container p{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(116, 116, 116);
+}
+
+
+footer .container .recent-post .post-item{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container .recent-post .post-item img{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+footer .container .recent-post .post-item .text-content{
+    margin-left: 15px;
+}
+
+footer .container .recent-post .post-item .text-content p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer .container .recent-post .post-item .text-content p:hover{
+    color: rgb(0, 208, 208);
+}
+
+footer .container .recent-post .post-item .text-content .date{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+footer .tag-subscribe .tags button{
+    border: 1px solid rgb(235, 235, 235);
+    color: black;
+    background-color: white;
+    padding: 3px 15px;
+    transition: 0.3s;
+    margin: 5px 5px 5px 0;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(116, 116, 116);
+}
+
+footer .tag-subscribe .tags button:hover{
+    border: 1px rgb(0, 208, 208) solid;
+    background-color: rgb(0, 208, 208);
+    color: white;
+}
+
+footer .tag-subscribe input{
+    padding: 5px;
+    padding-left: 10px;
+    width: 60%;
+    border: 1px solid rgb(235, 235, 235);
+    outline: none;
+}
+
+footer .tag-subscribe input:focus{
+    border: 1px solid rgb(0, 208, 208);
+}
+
+footer .tag-subscribe .subscribe{
+    margin-left: 2%;
+    padding: 5px 15px;
+    color: white;
+    border:  1px solid rgb(0, 208, 208);
+    background-color: rgb(0, 208, 208);
+    width: 30%;
+}
+
+footer .tag-subscribe .subscribe:hover{
+    background-color: rgb(0, 152, 152);
+}
+
+footer .text-widget-nav .heading{
+    margin-bottom: 0;
+}
+
+footer .text-widget-nav .links{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .text-widget-nav .links p:hover{
+    color: rgb(0, 208, 208);
+}
+
+footer .seperator{
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer .credit-socials{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(187, 187, 187);
+}
+
+footer .credit-socials .socials{
+    display: flex;
+}
+
+footer .credit-socials p{
+    font-size: 12px;
+}
+
+footer .credit-socials a{
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(116, 116, 116);
+}
+
+footer .credit-socials a:hover{
+    color: rgb(0, 208, 208);
+}
